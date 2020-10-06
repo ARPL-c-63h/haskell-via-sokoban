@@ -124,7 +124,7 @@ close look at Haskell's type system, which
 
 * *Turns run-time errors into compile-time errors*
 
-    It's much better to be able to fix errors up front than to just
+    It's much better to be able to fix errors up-front than to just
     test a lot and hope for the best.  “If it compiles, it must be
     correct” is mostly facetious (it's still quite possible to have errors
     in logic even in a type-correct program), but you are much more likely
@@ -191,9 +191,8 @@ In this class, we start working within a programming environment called
 CodeWorld, which you can access at <http://code.world/haskell> (the `/haskell`
 is important). This has the advantages that
 
- * we can start straight away, and take care of local installation later
- * with the integrated support for displaying graphical output, we can have
-   nice, visual, examples and initial tasks.
+ * we can start straight away, and take care of local installation later;
+ * we can have nice, visual, examples and initial tasks because of the integrated support for displaying graphical output.
 
 We will switch to compiling programs locally later during the course. If you
 want to work locally from the start, there are instructions on the course website.
@@ -280,7 +279,7 @@ solidCircle :: Double -> Picture
 
 The arrow (`->`) indicates that `solidCircle` itself is a *function*, turning a value of type `Double` – i.e. a floating point number – into a picture. Now `1` happens to be a real number, therefore `solidCircle 1` is a `Picture`.
 
-You can see that function application in Haskell works without parentheses, you just write the argument after the function. But if the argument itself is more complex than just one number of variable name, you have to put parentheses around it:
+You can see that function application in Haskell works without parentheses, you just write the argument after the function. But if the argument itself is more complex than just one number or variable name, you have to put parentheses around it:
 
 ```haskell
 ourPicture = solidCircle (1+1)
